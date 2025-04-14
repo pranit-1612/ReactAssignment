@@ -1,0 +1,168 @@
+/* Reset and base styles */
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+  background-color: #eef2f5;
+  color: #333;
+  box-sizing: border-box;
+}
+
+/* Full-page wrapper */
+.assignment-section {
+  min-height: 100vh;
+  width: 100%;
+  padding: 60px 5%;
+  background: linear-gradient(145deg, #dde1e7, #f3f6f9);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Assignment card styling */
+.assignment-card {
+  background-color: #ffffff;
+  padding: 32px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  width: 100%;
+  max-width: 1100px;
+  margin-bottom: 30px;
+  transition: transform 0.2s ease;
+}
+
+.assignment-card:hover {
+  transform: scale(1.01);
+}
+
+/* Layout rows inside cards */
+.detail-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 18px 0;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* Input styling */
+.assignment-input {
+  flex-grow: 1;
+  padding: 10px 16px;
+  border: 1px solid #ccd1d9;
+  border-radius: 10px;
+  font-size: 16px;
+  background-color: #fdfdfd;
+  transition: border-color 0.2s ease;
+}
+
+.assignment-input:focus {
+  border-color: #4c9aff;
+  outline: none;
+}
+
+/* Primary Button */
+.assignment-button {
+  background-color: #0077ff;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 12px;
+  border: none;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s;
+}
+
+.assignment-button:hover {
+  background-color: #005fd4;
+  transform: translateY(-2px);
+}
+
+/* Vertical button group */
+.assignment-buttons-vertical {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-top: 20px;
+}
+
+/* Horizontal button group */
+.button-group-horizontal {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+/* Form container */
+.assignment-form-container {
+  margin-top: 2rem;
+  width: 100%;
+}
+
+/* Assignment page container */
+.assignment-page {
+  padding: 30px;
+  background-color: #e6ecf1;
+  min-height: 100vh;
+}
+
+/* Card container */
+.assignment-container {
+  max-width: 950px;
+  margin: auto;
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Button overrides */
+.assignment-buttons-vertical button {
+  width: 100%;
+  padding: 12px;
+  background-color: #1d3557;
+  color: white;
+  font-size: 15px;
+  border: none;
+  border-radius: 10px;
+  transition: background 0.3s;
+}
+
+.assignment-buttons-vertical button:hover {
+  background-color: #16304b;
+}
+
+/* Themes */
+.light-theme {
+  background-color: #fdfdfd;
+  color: #1a1a1a;
+}
+
+.dark-theme {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+.dark-theme .assignment-card,
+.dark-theme .assignment-container {
+  background-color: #1e1e1e;
+  color: #e0e0e0;
+  box-shadow: 0 6px 16px rgba(255, 255, 255, 0.05);
+}
+
+.dark-theme input {
+  background-color: #2a2a2a;
+  color: #f1f1f1;
+  border: 1px solid #555;
+}
+
+.full-screen {
+  width: 100vw;
+  min-height: 100vh;
+  background-color: #e8f0f7;
+  padding: 2.5rem;
+}
