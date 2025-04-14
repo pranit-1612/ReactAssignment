@@ -11,7 +11,7 @@ export default function Assignment2() {
     <div className="assignment-section full-screen" style={{ display: 'flex' }}>
       {/* Main Content */}
       <div style={{ flex: 1, padding: '20px' }}>
-        <h1>Assignment 2: Form Handling & UI</h1>
+        <h1></h1>
         <div className="assignment-form-container">
           {selectedForm === 'rd' && (
             <div style={{ display: 'flex' }}>
